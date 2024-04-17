@@ -18,7 +18,7 @@
 /*--------------HEADER--------------*/
 
 .header_fondo{
-    background-image: url(/img/navFondo2.jpg);
+    background-image: url(img/navFondo2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,7 +29,7 @@
 }
 
 .cambiandoTodo{
-    background-image: url(/img/Bali-Indonesia.jpg);
+    background-image: url(img/Bali-Indonesia.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -109,7 +109,7 @@
   border-bottom: .5rem solid rgba(73, 216, 73, 0.664);
   */
 
-  background-image: url(./img/22222222222.png);
+  background-image: url(img/22222222222.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -144,7 +144,7 @@
 
 /*--------------Articulo Lugares--------------*/
 .articulo_lugares{
-  background-image: url(./img/FondoLugares.jpg);
+  background-image: url(img/FondoLugares.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -155,7 +155,7 @@
 }
 
 .articulo_lugares2{
-  background-image: url(./img/fondo_lugares2.jpg);
+  background-image: url(img/fondo_lugares2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -282,7 +282,7 @@
 
 
 .seccion_contacto{
-  background-image: url(./img/111111.png);
+  background-image: url(img/111111.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
