@@ -14,6 +14,13 @@ function cargarEventListener(){
     //CUANDO AGREGAMOS UN VIAJE
     elegir.addEventListener("click", agregarViaje);
 
+    //MOSTRAMOS LOS CURSOS DEL LOCALSTORAGE
+    document.addEventListener("DOMContentLoaded", () =>{
+        articulosCompraViaje = JSON.parse(localStorage.getItem("boleteria")) || [];
+
+        carritoHTML();
+    })
+
     //ELIMINAMOS VIAJES
     carritoDeCompras.addEventListener("click", eliminarViaje);
 
@@ -103,8 +110,9 @@ function carritoHTML(){
         //REVISA SI UN ELEMENTO ESTA EN BOLETERIA
 
         carritoDeCompras.insertBefore(cajaViaje, carritoDeCompras.children[1])
-    });
-
+    }
+    
+    )
 
     //ACA CREAMOS LA PARTE DE ARRIBA DEL CARRITO
     const menuCarrito = document.createElement("div");
@@ -125,8 +133,16 @@ function carritoHTML(){
     const eliminarTodo = document.createElement("div");
     eliminarTodo.classList.add("carritoBorrado")
     eliminarTodo.innerHTML =`<a class="carrito_borrarTodo">ELIMINAR TODOS</a>` 
-    carritoDeCompras.appendChild( eliminarTodo)
+    carritoDeCompras.appendChild( eliminarTodo);
+
+
+        //AGREGAMOS EL CARRITO AL LOCALSTORAGE
+        sincronizarStorage();
 }
+
+function sincronizarStorage(){
+        localStorage.setItem("boleteria", JSON.stringify(articulosCompraViaje))
+    }
 
 
 //ELIMINAMOS LOS VIAJES DE LA BOLETERIA
